@@ -79,6 +79,10 @@
 		.hamburger-box {
 			display: block;
 		}
+
+		.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+			background-color: $primary-color;
+		}
 	}
 
 	@media (#{$bp-larger-than-tablet}) {
@@ -134,6 +138,7 @@
 					a {
 						color: white;
 						border-color: white;
+						padding-left: 0;
 						-webkit-transition: all .25s linear;
 					       -moz-transition: all .25s linear;
 					        -ms-transition: all .25s linear;

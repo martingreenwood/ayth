@@ -143,6 +143,7 @@
 			</div>
 
 		</div>
+		<i class="fas fa-chevron-down"></i>
 	</section>
 
 	<div id="content" class="site-content">

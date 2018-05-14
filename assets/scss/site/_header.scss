@@ -149,6 +149,16 @@
 		height: 60vh;
 	}
 
+	.fa-chevron-down {
+		position: absolute;
+		z-index: 1;
+		bottom: 10px;
+		font-size: 40px;
+		color: white;
+		left: 50%;
+		margin-left: -20px;
+	}
+
 	.blurb {
 		position: absolute;
 		width: 100%;
@@ -158,9 +168,13 @@
 		text-align: center;
 
 		.branding {
-			width: 400px;
+			width: 250px;
 			display: inline-block;
 			margin-bottom: 4rem;
+
+			@media (#{$bp-larger-than-tablet}) {
+				width: 400px;
+			}
 
 			a {
 				margin: 0;

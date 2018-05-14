@@ -10,11 +10,22 @@
 
 #prefooter {
 	padding: 0 0 3rem 0;
+	text-align: center;
+	
+	@media (#{$bp-larger-than-tablet}) {
+		text-align: left;
+	}
 
 	.site-branding {
 		width: 125px;
-		float: left;
-		padding: 23px 0;
+		display: inline-block;
+		margin-bottom: 2rem;
+		
+		@media (#{$bp-larger-than-tablet}) {
+			float: left;
+			padding: 23px 0;
+			margin-bottom: 0;
+		}
 
 		svg, img {
 			display: block;
@@ -22,8 +33,10 @@
 	}
 
 	.info {
-		float: right;
-		text-align: right;
+		@media (#{$bp-larger-than-tablet}) {
+			float: right;
+			text-align: right;
+		}
 		
 		p {
 			margin-bottom: 0;
@@ -36,15 +49,22 @@
 		margin: 12rem auto;
 
 		div {
-			width: 33.333%;
+			width: 100%;
 			box-sizing: border-box;
-			border-right: 1px solid $primary-color;
 			padding: 0 3rem;
 			text-align: center;
 			float: left;
+			margin-bottom: 3rem;
+
+			@media (#{$bp-larger-than-tablet}) {
+				width: 33.333%;
+				border-right: 1px solid $primary-color;
+				margin-bottom: 0;
+			}
 
 			&:last-of-type {
 				border-right: 0;
+				margin-bottom: 0;
 			}
 
 			svg {

@@ -72,11 +72,15 @@
 		padding: 0;
 
 		li {
-			width: calc(50% - 15px);
+			width: 100%;
 			float: left;
-			margin-right: 30px;
 			margin-bottom: 30px;
 			position: relative;
+
+			@media (#{$bp-larger-than-tablet}) {
+				width: calc(50% - 15px);
+				margin-right: 30px;
+			}
 
 			&:nth-child(even) {
 				margin-right: 0;
@@ -88,19 +92,27 @@
 
 			.text {
 				position: absolute;
-				width: 50%;
+				width: 60%;
 				top: 0;
 				height: 100%;
 				text-align: center;
 
+				@media (#{$bp-larger-than-tablet}) {
+					width: 50%;
+				}
+
 				* {
 					color: white;
 					font-size: inherit;
+					text-align: center;
 				}
 
 				h3 {
 					font-weight: 400;
-					padding: 0 100px;
+					padding: 0 20px;
+
+					@media (#{$bp-larger-than-tablet}) {
+					}
 				}
 
 				button {
@@ -114,6 +126,18 @@
 					border-radius: 0;
 					border-color: white;
 				}
+			}
+
+			&:nth-child(1), &:nth-child(2), &:nth-child(5), &:nth-child(6), {
+				.text {
+					right: 0;
+				} 
+			}
+
+			&:nth-child(3), &:nth-child(4), &:nth-child(7), &:nth-child(8), {
+				.text {
+					left: 0;
+				} 
 			}
 		}
 	}
@@ -135,6 +159,10 @@
 		}
 
 		.blurb {
+
+			h2 {
+				margin-bottom: 4rem;
+			}
 			
 			.after {
 			}
@@ -191,8 +219,14 @@
 			max-width: 1140px;
 
 			.wrap {
-				width: 30%;
+				width: 100%;
 				float: right;
+				text-align: center;
+
+				@media (#{$bp-larger-than-tablet}) {
+					width: 30%;
+					text-align: left;
+				}
 
 				h2 {
 					padding-left: 0;
@@ -214,7 +248,7 @@
 			margin-bottom: 4rem;
 			padding-bottom: 4rem;
 			border-bottom: 1px solid $primary-color;
-			display: ltr;
+			display: rtl;
 
 			&:last-of-type {
 				margin-bottom: 0;
@@ -223,12 +257,21 @@
 
 			> div {
 				display: inline-block;
-				width: 50%;
+				width: 100%;
 				vertical-align: middle;
 				box-sizing: border-box;
+
+				@media (#{$bp-larger-than-tablet}) {
+					width: 50%;
+				}
 			}
 
 			.entry-image {
+				margin-top: 3rem;
+
+				@media (#{$bp-larger-than-tablet}) {
+					margin-top: 0;
+				}
 
 				img {
 					display: block;
@@ -237,7 +280,9 @@
 			}
 
 			.entry-content {
-				padding-right: 6rem;
+				@media (#{$bp-larger-than-tablet}) {
+					padding-right: 6rem;
+				}
 
 				.more {
 					margin-top: 3rem;
