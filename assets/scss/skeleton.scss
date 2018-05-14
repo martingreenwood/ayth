@@ -1,0 +1,35 @@
+/*!
+Theme Name: ayth
+Author: Martin Greenwood
+Author URI: http://www.wearebeard.com
+Description: Description
+Version: 1.0.0
+Text Domain: ayth
+*/
+
+/* Base files. */
+@import "base/normalize";
+@import "base/variables";
+@import "base/functions";
+@import "base/base-styles";
+@import "base/utils";
+@import "base/typography";
+
+/* Modules */
+@import "hover/hover";
+@import "modules/grid";
+@import "modules/buttons";
+@import "modules/forms";
+@import "modules/lists";
+@import "modules/code";
+@import "modules/tables";
+@import "modules/spacing";
+@import "modules/media-queries";
+@import "hamburgers/hamburgers";
+
+
+/* Site */
+@import "site/nav";
+@import "site/header";
+@import "site/content";
+@import "site/footer";

@@ -1,0 +1,380 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/9/2014
+* Sass Version by Seth Coelen https://github.com/whatsnewsaes
+*/
+
+.map {
+	width: 100%;
+	height: 400px;
+	border: #ccc solid 1px;
+	margin: 20px 0;
+
+	/* fixes potential theme css conflict */
+	img {
+	   max-width: inherit !important;
+	}
+}
+
+#content {
+	background-color: white;
+}
+
+#primary {
+	padding: 12rem 0;
+	text-align: center;
+
+	.container {
+		max-width: 1140px;
+	}
+
+	h1, h2 {
+		font-size: 3rem;
+		margin-bottom: 6rem;
+	}
+
+	p {
+		margin-bottom: 4rem;
+	}
+
+	.more {
+		margin-bottom: 0;
+		display: inline-block;
+		padding: 1rem 1.5rem;
+		font-weight: 600;
+		border: 1px solid $primary-color;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+}
+
+#range {
+	text-align: center;
+
+	.more {
+		margin-bottom: 0;
+		margin-top: 6rem;
+		display: inline-block;
+		padding: 1rem 1.5rem;
+		font-weight: 600;
+		border: 1px solid $primary-color;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			width: calc(50% - 15px);
+			float: left;
+			margin-right: 30px;
+			margin-bottom: 30px;
+			position: relative;
+
+			&:nth-child(even) {
+				margin-right: 0;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			.text {
+				position: absolute;
+				width: 50%;
+				top: 0;
+				height: 100%;
+				text-align: center;
+
+				* {
+					color: white;
+					font-size: inherit;
+				}
+
+				h3 {
+					font-weight: 400;
+					padding: 0 100px;
+				}
+
+				button {
+					border-radius: 0;
+					height: auto;
+					line-height: inherit;
+					font-size: inherit;
+					letter-spacing: inherit;
+					padding: 1rem 2.5rem;
+					text-transform: uppercase;
+					border-radius: 0;
+					border-color: white;
+				}
+			}
+		}
+	}
+}
+
+/*====================================
+=            HOME / PRODS            =
+====================================*/
+
+.home, .products {
+
+	#primary {
+
+	}
+
+	#banner {
+		@media (#{$bp-larger-than-tablet}) {
+			height: 80vh;
+		}
+
+		.blurb {
+			
+			.after {
+			}
+		}
+	}
+}
+
+.products {
+
+	#banner {
+		@media (#{$bp-larger-than-tablet}) {
+			height: 60vh;
+		}
+
+		.blurb {
+			
+			.after {
+			}
+		}
+	}
+}
+
+/*===============================
+=            CONTACT            =
+===============================*/
+
+.contact-us {
+
+	#form {
+
+		.container {
+			max-width: 1140px;
+		}
+	}
+
+	#mappy {
+		margin-top: 12rem;
+	}
+}
+
+/*==============================
+=            RANGES            =
+==============================*/
+
+.tax-range {
+
+	#banner {
+
+		.text {
+			width: 100%;
+			color: white;
+			text-align: left;
+			margin: 0 auto;
+			max-width: 1140px;
+
+			.wrap {
+				width: 30%;
+				float: right;
+
+				h2 {
+					padding-left: 0;
+					margin-bottom: 2rem;
+				}
+
+				p {
+					margin-bottom: 0.5rem;
+					color: white;
+				}
+			}
+		}
+	}
+
+	#primary {
+
+		article {
+			text-align: left;
+			margin-bottom: 4rem;
+			padding-bottom: 4rem;
+			border-bottom: 1px solid $primary-color;
+			display: ltr;
+
+			&:last-of-type {
+				margin-bottom: 0;
+				border-bottom: 0;
+			}
+
+			> div {
+				display: inline-block;
+				width: 50%;
+				vertical-align: middle;
+				box-sizing: border-box;
+			}
+
+			.entry-image {
+
+				img {
+					display: block;
+					width: 100%;
+				}
+			}
+
+			.entry-content {
+				padding-right: 6rem;
+
+				.more {
+					margin-top: 3rem;
+				}
+
+				h2 {
+					margin-bottom: 2rem;
+					font-size: 2rem;
+				}
+
+				p {
+					margin-bottom: 2rem;
+				}
+
+				ul {
+					margin-bottom: 2rem;
+					list-style: none;
+
+					li {
+						padding-left: 3rem;
+						position: relative;
+
+						&:before {
+							content: "- ";
+							position: absolute;
+							margin-left: -15px;
+						}
+					}
+				}
+			}
+
+			// &:nth-child(even) {
+			// 	direction: rtl;
+				
+
+			// 	.entry-image {
+			// 		padding-right: 0;
+			// 		padding-left: 6rem;
+			// 	}
+			// }
+		}
+	}
+}
+
+/*=============================
+=            POSTS            =
+=============================*/
+
+.blog {
+
+	#primary {
+
+		article {
+			text-align: left;
+			margin-bottom: 4rem;
+			padding-bottom: 4rem;
+			border-bottom: 1px solid $primary-color;
+			display: ltr;
+
+			&:last-of-type {
+				margin-bottom: 0;
+				border-bottom: 0;
+			}
+
+			> div {
+				display: inline-block;
+				width: 50%;
+				vertical-align: middle;
+				box-sizing: border-box;
+			}
+
+			.entry-image {
+
+				img {
+					display: block;
+					width: 100%;
+				}
+			}
+
+			.entry-content {
+				padding-right: 6rem;
+
+				.more {
+					margin-top: 3rem;
+				}
+
+				h2 {
+					margin-bottom: 2rem;
+					font-size: 2rem;
+				}
+
+				p {
+					margin-bottom: 2rem;
+				}
+
+				ul {
+					margin-bottom: 2rem;
+					list-style: none;
+
+					li {
+						padding-left: 3rem;
+						position: relative;
+
+						&:before {
+							content: "- ";
+							position: absolute;
+							margin-left: -15px;
+						}
+					}
+				}
+			}
+
+			// &:nth-child(even) {
+			// 	direction: rtl;
+				
+
+			// 	.entry-image {
+			// 		padding-right: 0;
+			// 		padding-left: 6rem;
+			// 	}
+			// }
+		}
+	}
+}
+
+
+/*==============================
+=            SINGLE            =
+==============================*/
+
+.single {
+
+	#primary {
+
+		.entry-content {
+			margin-top: 4rem;
+		}
+	}
+
+}
