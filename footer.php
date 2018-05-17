@@ -35,26 +35,18 @@
 					<?php the_field( 'contact_us', 'options' ); ?>
 				</div>
 			</div>
-
-			<div class="row">
-
-				<div class="site-branding">
-					<?php the_custom_logo(); ?>					
-				</div>
-
-				<div class="info">
-					<p>Address Town Postcode Area</p>
-					<p>Telephone: 01234 56789</p>
-					<p>Email: info@emailaddress.co.uk</p>
-				</div>
-
-			</div>
+			
 		</div>
 		
 	</section>
 
-	<footer id="colophon" class="site-footer"><!--
-	--></footer>
+	<footer id="colophon" class="site-footer">
+		<div class="container">
+			<div class="row">
+				<p>Company Registration No: 11071144. VAT No: 291 6854 66</p>
+			</div>
+		</div>
+	</footer>
 
 </div>
 <?php wp_footer(); ?>

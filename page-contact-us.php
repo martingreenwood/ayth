@@ -9,6 +9,14 @@
 
 get_header(); ?>
 
+	<section id="form">
+		<div class="container">
+			<div class="row">
+				<?php echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true"]' ); ?>
+			</div>
+		</div>
+	</section>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main container">
 
@@ -26,29 +34,6 @@ get_header(); ?>
 
 		</main>
 	</div>
-
-	<section id="form">
-		<div class="container">
-			<div class="row">
-				<?php echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true"]' ); ?>
-			</div>
-		</div>
-	</section>
-
-	<section id="mappy">
-		<div class="container">
-			<div class="row">
-				<?php 
-				$location = get_field('location');
-				if( !empty($location) ):
-				?>
-				<div class="map">
-					<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
-				</div>
-				<?php endif; ?>
-			</div>
-		</div>
-	</section>
 
 <?php
 get_footer();

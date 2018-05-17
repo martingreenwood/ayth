@@ -24,11 +24,9 @@
 
 				&:hover {
 
-					a {
-					}
-
 					.sub-menu {
 						background-color: $primary-color;
+						display: block;
 					}
 				}
 
@@ -36,7 +34,23 @@
 					text-decoration: none;
 					padding: 0 0 0 2rem;
 					line-height: 37px;
-					text-transform: capitalize;
+					// text-transform: capitalize;
+
+					@media (#{$bp-larger-than-tablet}) {
+						line-height: 60px;
+						font-size: 1.8rem;
+					}
+				}
+
+				&.border-left {
+					margin-left: 2rem;
+					border-left: 1px solid #a0a0a0;
+				}
+
+				&.grey {
+					a {
+						color: #a0a0a0;
+					}
 				}
 			}
 
@@ -46,7 +60,8 @@
 				z-index: 1;
 				display: none;
 				margin: 0;
-				padding-top: 10px;
+				padding-top: 2rem;
+				padding-bottom: 2rem;
 				text-align: left;
 
 				li {
@@ -54,13 +69,9 @@
 
 					a {
 						display: block;
-					}
-
-					&:last-of-type {
-						a {
-							text-transform: capitalize;
-							border: none; 
-						}
+						color: white;
+						padding-right: 6rem;
+						line-height: 4rem;
 					}
 				}
 			}

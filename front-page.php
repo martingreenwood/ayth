@@ -63,10 +63,10 @@ get_header(); ?>
 					$terms = get_terms($taxonomy, $args);
 				?>
 
-				<?php if (!empty($terms) && !is_wp_error($terms) ): $i=0; ?>
-					<ul>
+				<?php if (!empty($terms) && !is_wp_error($terms) ): ?>
+					<ul><!--
 					<?php foreach ($terms as $term): ?>
-						<li>
+						--><li>
 				  			<a href="<?php echo get_term_link($term); ?>">
 				  				<?php echo get_term_thumbnail( $term->term_taxonomy_id, $size = 'full', $attr = '' ); ?>
 				  				<div class="text">
@@ -78,13 +78,12 @@ get_header(); ?>
 					  				</div>
 				  				</div>
 			  				</a>
-				  		</li>
-					<?php 
-					$i++;
-					if($i==4) break;
-					endforeach; ?>
-					</ul>
+				  		</li><!--
+					<?php endforeach; ?>
+					--></ul>
 				<?php endif; ?>
+
+				<div class="clear"></div>
 
 				<a class="more hvr-sweep-to-right" href="<?php echo home_url( '/products' ); ?>" title="">View Ranges</a>
 

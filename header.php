@@ -99,23 +99,6 @@
 					<div class="text">
 						<div class="wrap">
 							<h2><?php echo get_the_archive_title(); ?></h2>
-							<?php 
-							$product_array = get_posts(
-								array(
-									'posts_per_page' => -1,
-									'post_type' => 'product',
-									'tax_query' => array(
-										array(
-											'taxonomy' => 'range',
-											'field' => 'term_id',
-											'terms' => get_queried_object()->term_id,
-										)
-									)
-								)
-							);
-							foreach ($product_array as $product): ?>
-								<p><?php echo $product->post_title ?></p>
-							<?php endforeach; ?>
 						</div>
 					</div>
 

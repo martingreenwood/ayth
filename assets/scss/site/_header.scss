@@ -129,6 +129,10 @@
 			width: 125px;
 			float: left;
 
+			@media (#{$bp-larger-than-tablet}) {
+				width: 200px;
+			}
+
 			svg, img {
 				display: block;
 			}
@@ -173,7 +177,7 @@
 			margin-bottom: 4rem;
 
 			@media (#{$bp-larger-than-tablet}) {
-				width: 400px;
+				width: 500px;
 			}
 
 			a {

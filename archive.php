@@ -9,14 +9,20 @@
 
 get_header(); ?>
 
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main container">
 			<div class="row">
+				<center>
+					<?php $term = get_queried_object(); ?>
+					<?php the_field( 'banner_text', $term ); ?>
+				</center>
+			</div>
+			<div class="row">
 
 				<?php
-				if ( have_posts() ) : ?>
+				if ( have_posts() ) :
 
-					<?php
 					/* Start the Loop */
 					while ( have_posts() ) : the_post();
 
@@ -28,12 +34,6 @@ get_header(); ?>
 						get_template_part( 'template-parts/content', 'ranges' );
 
 					endwhile;
-
-					//the_posts_navigation();
-
-				else :
-
-					get_template_part( 'template-parts/content', 'none' );
 
 				endif; ?>
 
@@ -75,10 +75,10 @@ get_header(); ?>
 					$terms = get_terms($taxonomy, $args);
 				?>
 
-				<?php if (!empty($terms) && !is_wp_error($terms) ): $i=0; ?>
-					<ul>
+				<?php if (!empty($terms) && !is_wp_error($terms) ): ?>
+					<ul><!--
 					<?php foreach ($terms as $term): ?>
-						<li>
+						--><li>
 				  			<a href="<?php echo get_term_link($term); ?>">
 				  				<?php echo get_term_thumbnail( $term->term_taxonomy_id, $size = 'full', $attr = '' ); ?>
 				  				<div class="text">
@@ -90,12 +90,9 @@ get_header(); ?>
 					  				</div>
 				  				</div>
 			  				</a>
-				  		</li>
-					<?php 
-					$i++;
-					if($i==4) break;
-					endforeach; ?>
-					</ul>
+				  		</li><!--
+					<?php endforeach; ?>
+					--></ul>
 				<?php endif; ?>
 
 				<a class="more hvr-sweep-to-right" href="<?php echo home_url( '/products' ); ?>" title="">View Ranges</a>

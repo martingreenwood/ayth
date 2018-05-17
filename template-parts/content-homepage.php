@@ -15,7 +15,7 @@
 		<?php
 			the_content();
 		?>
-		<p><!----><a class="more hvr-sweep-to-right" href="<?php home_url( '/contact-us' ); ?>" title="contact us today">Contact Us</a><!----></p>
+		<p><!----><a class="more hvr-sweep-to-right" href="<?php echo home_url( '/contact-us' ); ?>" title="contact us today">Contact Us</a><!----></p>
 	</div>
 
 </article>
