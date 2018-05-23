@@ -100,6 +100,11 @@
 				text-decoration: none;
 			}
 
+			img {
+				width: 100%;
+				display: block;
+			}
+
 			.text {
 				position: absolute;
 				width: 60%;
@@ -312,6 +317,10 @@
 				img {
 					display: block;
 					width: 100%;
+					border-top: 10px solid #4d4d4d;
+					border-right: 10px solid $primary-color;
+					border-bottom: 10px solid $primary-color;
+					border-left: 10px solid #4d4d4d;
 				}
 			}
 

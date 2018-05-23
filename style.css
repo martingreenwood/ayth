@@ -2102,6 +2102,8 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #range ul li a { text-decoration: none; }
 
+#range ul li img { width: 100%; display: block; }
+
 #range ul li .text { position: absolute; width: 60%; top: 0; height: 100%; text-align: center; }
 
 @media (min-width: 750px) { #range ul li .text { width: 40%; } }
@@ -2169,7 +2171,7 @@ th:last-child, td:last-child { padding-right: 0; }
 
 @media (min-width: 750px) { .tax-range #primary article .entry-image { margin-top: 0; } }
 
-.tax-range #primary article .entry-image img { display: block; width: 100%; }
+.tax-range #primary article .entry-image img { display: block; width: 100%; border-top: 10px solid #4d4d4d; border-right: 10px solid #071d49; border-bottom: 10px solid #071d49; border-left: 10px solid #4d4d4d; }
 
 .tax-range #primary article .entry-content .more { margin-top: 3rem; }
 

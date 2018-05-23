@@ -2689,6 +2689,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/taxonomy-range.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/taxonomy-range.php",
+		"oF": 0
+		},
 	"\/template-parts\/content-homepage.php": {
 		"cB": 0,
 		"ft": 8192,

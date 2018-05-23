@@ -294,3 +294,27 @@ add_filter('get_the_archive_title', function ($title) {
     }
     return $title;
 });
+
+
+add_action('parse_query', 'pmg_ex_sort_posts');
+/**
+ * Hooked into `parse_query` this changes the orderby and order arguments of
+ * the query, forcing the post order on post type archives for `your_custom_pt`
+ * and a few taxonomies to follow the menu order.
+ *
+ * @param   object $q The WP_Query object.  This is passed by reference, you
+ *          don't have to return anything.
+ * @return  null
+ */
+function pmg_ex_sort_posts($q)
+{
+    if(!$q->is_main_query() || is_admin())
+        return;
+    
+    if(
+        !is_post_type_archive('product') && 
+        !is_tax(array('range', 'product'))
+    ) return;
+    $q->set('orderby', 'menu_order');
+    $q->set('order', 'ASC');
+}
