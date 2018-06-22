@@ -85,7 +85,7 @@ get_header(); ?>
 
 				<div class="clear"></div>
 
-				<a class="more hvr-sweep-to-right" href="<?php echo home_url( '/products' ); ?>" title="">View Ranges</a>
+				<a class="more hvr-sweep-to-right" href="<?php echo home_url( '/products' ); ?>" title="View Range">View Range</a>
 
 			</div>
 			
