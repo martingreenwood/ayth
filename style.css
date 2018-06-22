@@ -2082,7 +2082,7 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #primary h1, #primary h2 { font-size: 3rem; margin-bottom: 6rem; }
 
-#primary p { margin-bottom: 4rem; }
+#primary p { margin-bottom: 2rem; }
 
 #primary .more { margin-bottom: 0; letter-spacing: 1px; display: inline-block; padding: 1rem 1.5rem; font-weight: 600; border: 1px solid #071d49; text-transform: uppercase; text-decoration: none; }
 
