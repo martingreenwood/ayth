@@ -20,11 +20,14 @@
 		<div class="container">
 
 			<div class="row big-three">
+				<?php
+				/*
 				<div class="fast">
 					<i class="fas fa-truck"></i>
 					<?php the_field( 'delivery', 'options' ); ?>
-					
 				</div>
+				*/ 
+				?>
 				<div class="bespoke">
 					<i class="fas fa-mouse-pointer"></i>
 					<?php the_field( 'bespoke_service', 'options' ); ?>

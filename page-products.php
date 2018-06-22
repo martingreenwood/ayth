@@ -64,9 +64,9 @@ get_header(); ?>
 				?>
 
 				<?php if (!empty($terms) && !is_wp_error($terms) ): ?>
-					<ul>
+					<ul><!--
 					<?php foreach ($terms as $term): ?>
-						<li>
+						--><li>
 				  			<a href="<?php echo get_term_link($term); ?>">
 				  				<?php echo get_term_thumbnail( $term->term_taxonomy_id, $size = 'full', $attr = '' ); ?>
 				  				<div class="text">
@@ -78,9 +78,9 @@ get_header(); ?>
 					  				</div>
 				  				</div>
 			  				</a>
-				  		</li>
+				  		</li><!--
 					<?php endforeach; ?>
-					</ul>
+					--></ul>
 				<?php endif; ?>
 
 			</div>

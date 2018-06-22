@@ -48,6 +48,7 @@
 
 	.more {
 		margin-bottom: 0;
+		letter-spacing: 1px;
 		display: inline-block;
 		padding: 1rem 1.5rem;
 		font-weight: 600;
@@ -61,6 +62,7 @@
 	text-align: center;
 
 	.more {
+		letter-spacing: 1px;
 		margin-bottom: 0;
 		margin-top: 6rem;
 		display: inline-block;
@@ -132,10 +134,10 @@
 
 				button {
 					border-radius: 0;
+					letter-spacing: 1px;
 					height: auto;
 					line-height: inherit;
 					font-size: inherit;
-					letter-spacing: inherit;
 					padding: 1rem 2.5rem;
 					text-transform: uppercase;
 					border-radius: 0;
@@ -283,7 +285,9 @@
 			padding-bottom: 4rem;
 			border-bottom: 1px solid #a0a0a0;
 			width: 100%;
-			float: left;
+			float: none;
+			display: inline-block;
+			vertical-align: top;
 
 			@media (#{$bp-larger-than-tablet}) {
 				width: calc(50% - 15px);
@@ -321,6 +325,7 @@
 					border-right: 10px solid $primary-color;
 					border-bottom: 10px solid $primary-color;
 					border-left: 10px solid #4d4d4d;
+					box-sizing: border-box;
 				}
 			}
 

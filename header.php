@@ -117,7 +117,7 @@
 					<?php endif; ?>
 					
 					<?php if ( is_front_page() ): ?>
-						<a class="hvr-sweep-to-right" href="<?php echo home_url( '/products' ); ?>" title="View ranges">View ranges</a>
+						<a class="hvr-sweep-to-right" href="<?php echo home_url( '/products' ); ?>" title="View ranges">View Range</a>
 					<?php endif; ?>
 
 				<?php endif ?>
