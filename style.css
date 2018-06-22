@@ -1983,7 +1983,7 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #site-navigation .menu-main-container ul li.border-left { margin-left: 2rem; border-left: 1px solid #a0a0a0; }
 
-#site-navigation .menu-main-container ul li.grey a { color: #a0a0a0; }
+#site-navigation .menu-main-container ul li.grey a { color: black; font-weight: 600; }
 
 #site-navigation .menu-main-container ul .sub-menu { position: absolute; width: auto; z-index: 1; display: none; margin: 0; padding-top: 2rem; padding-bottom: 2rem; text-align: left; }
 
