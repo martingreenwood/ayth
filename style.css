@@ -2130,6 +2130,12 @@ th:last-child, td:last-child { padding-right: 0; }
 /*===============================
 =            CONTACT            =
 ===============================*/
+.contact-us ul.social { margin: 4rem 0 0 0; text-align: center; list-style: none; }
+
+.contact-us ul.social li { display: inline-block; vertical-align: middle; margin: 0 10px; }
+
+.contact-us ul.social li svg { font-size: 30px; }
+
 .contact-us #form { margin-top: 15rem; }
 
 .contact-us #form .container { max-width: 1140px; }

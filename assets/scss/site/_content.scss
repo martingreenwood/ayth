@@ -208,6 +208,22 @@
 
 .contact-us {
 
+	ul.social {
+		margin: 4rem 0 0 0;
+		text-align: center;
+		list-style: none;
+
+		li {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 10px;
+
+			svg {
+				font-size: 30px;
+			}
+		}
+	}
+
 	#form {
 		margin-top: 15rem;
 
