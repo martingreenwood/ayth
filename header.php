@@ -80,7 +80,7 @@
 				<?php if ( is_home() ): ?>
 					
 					<div class="branding">
-						<?php the_custom_logo(  ); ?>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/athelynlogo.svg" class="custom-logo jetpack-lazy-image--handled" alt="Athelyn Ltd" itemprop="logo" data-lazy-loaded="1">
 					</div>
 					<?php if (get_field( 'banner_text', get_option( 'page_for_posts' ) )): ?>
 					<div class="text">
@@ -106,7 +106,7 @@
 
 					<?php if ( is_front_page() & !is_home() || is_page() ): ?>
 						<div class="branding">
-						<?php the_custom_logo(  ); ?>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/athelynlogo.svg" class="custom-logo jetpack-lazy-image--handled" alt="Athelyn Ltd" itemprop="logo" data-lazy-loaded="1">
 						</div>
 					<?php endif; ?>
 
